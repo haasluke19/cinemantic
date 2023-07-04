@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinemantic</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/e274833811.js" crossorigin="anonymous"></script>
+  <script src="./index.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+</head>
+<body>
+  <header>
+      <img src="./assets/logo.png" alt="" class="header__logo">
+      <h3 class="header__logo--sub-title">A directory of all movies ever made.</h3>
+      <div class="header__title--container">
+        <div class="header__title--group">
+          <h1 class="header__title">Lights</h1>
+          <i class="fa-solid header__title--icon fa-lightbulb"></i>
+        </div>
+        <div class="header__title--group">
+          <h1 class="header__title">Camera</h1>
+          <i class="fa-solid header__title--icon fa-video"></i>
+        </div>
+        <div class="header__title--group">
+          <h1 class="header__title">Action</h1>
+          <i class="fa-solid header__title--icon fa-clapperboard"></i>
+        </div>
+      </div>
+      <h3 class="header__sub-title">Unleash Your Reel Potential.</h3>
+      <form class="header__search--container" onsubmit="titleSearch(event)">
+        <input class="header__search--bar" id="searchInput" placeholder="Search For Movies"></input>
+        <button class="header__search--button" type="submit">Search</button>
+      </form>
+  </header>
+  <section id="landing">
+    <h2 class="landing__title">Recommended</h2>
+    <ul class="movie__list">
+    </ul>
+  </section>
+  <footer>
+    <img src="./assets/logo.png" alt="" class="footer__logo">
+    <ul class="footer__links">
+      <a class="footer__link no-click link__hover-effect" href="#">About</a>
+      <a class="footer__link link__hover-effect" href="#">Home</a>
+      <a class="footer__link no-click link__hover-effect" href="#">Contact</a>
+    </ul>
+    <h4 class="footer__copyright">&copy;2023 Cinemantic</h4>
+  </footer>
+</body>
+</html>
